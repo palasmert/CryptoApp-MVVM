@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		617FCFE52CB93B7700ADB412 /* ViewCryptoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617FCFE42CB93B7700ADB412 /* ViewCryptoController.swift */; };
 		61C254072CB9090F00C5A792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C254062CB9090F00C5A792 /* AppDelegate.swift */; };
 		61C254112CB9090F00C5A792 /* CryptoAppMVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61C2540F2CB9090F00C5A792 /* CryptoAppMVVM.xcdatamodeld */; };
 		61C254132CB9091000C5A792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C254122CB9091000C5A792 /* Assets.xcassets */; };
@@ -15,10 +16,12 @@
 		61C254262CB90AFE00C5A792 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C254252CB90AFE00C5A792 /* Constants.swift */; };
 		61C254282CB91B7900C5A792 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C254272CB91B7900C5A792 /* Coin.swift */; };
 		61C2542A2CB91DEE00C5A792 /* CoinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C254292CB91DEE00C5A792 /* CoinCell.swift */; };
+		61FD633F2CC1064800776194 /* ViewCryptoControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FD633E2CC1064800776194 /* ViewCryptoControllerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		617FCFE02CB934C100ADB412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = CryptoAppMVVM/Info.plist; sourceTree = "<group>"; };
+		617FCFE42CB93B7700ADB412 /* ViewCryptoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCryptoController.swift; sourceTree = "<group>"; };
 		61C254032CB9090F00C5A792 /* CryptoAppMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoAppMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C254062CB9090F00C5A792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61C254102CB9090F00C5A792 /* CryptoAppMVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CryptoAppMVVM.xcdatamodel; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		61C254252CB90AFE00C5A792 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		61C254272CB91B7900C5A792 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		61C254292CB91DEE00C5A792 /* CoinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCell.swift; sourceTree = "<group>"; };
+		61FD633E2CC1064800776194 /* ViewCryptoControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCryptoControllerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				61C254232CB90A8200C5A792 /* HomeController.swift */,
+				617FCFE42CB93B7700ADB412 /* ViewCryptoController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 		61C2541F2CB90A1B00C5A792 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				61FD633E2CC1064800776194 /* ViewCryptoControllerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -193,6 +199,8 @@
 			files = (
 				61C254242CB90A8200C5A792 /* HomeController.swift in Sources */,
 				61C254072CB9090F00C5A792 /* AppDelegate.swift in Sources */,
+				61FD633F2CC1064800776194 /* ViewCryptoControllerViewModel.swift in Sources */,
+				617FCFE52CB93B7700ADB412 /* ViewCryptoController.swift in Sources */,
 				61C254112CB9090F00C5A792 /* CryptoAppMVVM.xcdatamodeld in Sources */,
 				61C254282CB91B7900C5A792 /* Coin.swift in Sources */,
 				61C2542A2CB91DEE00C5A792 /* CoinCell.swift in Sources */,

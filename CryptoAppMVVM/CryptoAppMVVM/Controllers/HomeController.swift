@@ -38,6 +38,7 @@ class HomeController: UIViewController {
     //MARK: - UISETUP
     private func setupUI() {
         self.view.backgroundColor = .systemBackground
+        self.navigationItem.title = "CrytoApp-MVVM"
         
         self.view.addSubview(tableView)
         self.tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -70,5 +71,18 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
         let coin = self.coins[indexPath.row]
         cell.configure(with: coin)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 88
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.tableView.deselectRow(at: indexPath, animated: true)
+        
+        let coin = self.coins[indexPath.row]
+        let vm = ViewCryptoControllerViewModel(coin)
+        let vc = ViewCryptoController(vm)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
