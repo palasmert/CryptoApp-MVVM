@@ -16,6 +16,7 @@
 		61C254262CB90AFE00C5A792 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C254252CB90AFE00C5A792 /* Constants.swift */; };
 		61C254282CB91B7900C5A792 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C254272CB91B7900C5A792 /* Coin.swift */; };
 		61C2542A2CB91DEE00C5A792 /* CoinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C254292CB91DEE00C5A792 /* CoinCell.swift */; };
+		61C445182CC11D38004A384A /* CoinError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C445172CC11D38004A384A /* CoinError.swift */; };
 		61FD633F2CC1064800776194 /* ViewCryptoControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FD633E2CC1064800776194 /* ViewCryptoControllerViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		61C254252CB90AFE00C5A792 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		61C254272CB91B7900C5A792 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		61C254292CB91DEE00C5A792 /* CoinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCell.swift; sourceTree = "<group>"; };
+		61C445172CC11D38004A384A /* CoinError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinError.swift; sourceTree = "<group>"; };
 		61FD633E2CC1064800776194 /* ViewCryptoControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCryptoControllerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				61C254272CB91B7900C5A792 /* Coin.swift */,
+				61C445172CC11D38004A384A /* CoinError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				61FD633F2CC1064800776194 /* ViewCryptoControllerViewModel.swift in Sources */,
 				617FCFE52CB93B7700ADB412 /* ViewCryptoController.swift in Sources */,
 				61C254112CB9090F00C5A792 /* CryptoAppMVVM.xcdatamodeld in Sources */,
+				61C445182CC11D38004A384A /* CoinError.swift in Sources */,
 				61C254282CB91B7900C5A792 /* Coin.swift in Sources */,
 				61C2542A2CB91DEE00C5A792 /* CoinCell.swift in Sources */,
 				61C254262CB90AFE00C5A792 /* Constants.swift in Sources */,
