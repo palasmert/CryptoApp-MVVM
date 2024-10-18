@@ -11,6 +11,8 @@
 		613FD3802CC1315400F9D925 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613FD37F2CC1315400F9D925 /* EndPoint.swift */; };
 		613FD3822CC159FD00F9D925 /* CoinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613FD3812CC159FD00F9D925 /* CoinService.swift */; };
 		613FD3842CC2431700F9D925 /* HomeControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613FD3832CC2431700F9D925 /* HomeControllerViewModel.swift */; };
+		613FD3872CC2642D00F9D925 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 613FD3862CC2642D00F9D925 /* SDWebImage */; };
+		613FD3892CC2642D00F9D925 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 613FD3882CC2642D00F9D925 /* SDWebImageMapKit */; };
 		617FCFE52CB93B7700ADB412 /* ViewCryptoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617FCFE42CB93B7700ADB412 /* ViewCryptoController.swift */; };
 		61C254072CB9090F00C5A792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C254062CB9090F00C5A792 /* AppDelegate.swift */; };
 		61C254112CB9090F00C5A792 /* CryptoAppMVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61C2540F2CB9090F00C5A792 /* CryptoAppMVVM.xcdatamodeld */; };
@@ -49,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				613FD3892CC2642D00F9D925 /* SDWebImageMapKit in Frameworks */,
+				613FD3872CC2642D00F9D925 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +162,10 @@
 			dependencies = (
 			);
 			name = CryptoAppMVVM;
+			packageProductDependencies = (
+				613FD3862CC2642D00F9D925 /* SDWebImage */,
+				613FD3882CC2642D00F9D925 /* SDWebImageMapKit */,
+			);
 			productName = CryptoAppMVVM;
 			productReference = 61C254032CB9090F00C5A792 /* CryptoAppMVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -186,6 +194,9 @@
 				Base,
 			);
 			mainGroup = 61C253FA2CB9090F00C5A792;
+			packageReferences = (
+				613FD3852CC2642C00F9D925 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 61C254042CB9090F00C5A792 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -437,6 +448,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		613FD3852CC2642C00F9D925 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		613FD3862CC2642D00F9D925 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 613FD3852CC2642C00F9D925 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		613FD3882CC2642D00F9D925 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 613FD3852CC2642C00F9D925 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		61C2540F2CB9090F00C5A792 /* CryptoAppMVVM.xcdatamodeld */ = {

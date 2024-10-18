@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import CoreData
+import SDWebImage
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let initialViewController = HomeController()
         window?.rootViewController = UINavigationController(rootViewController: initialViewController)
         window?.makeKeyAndVisible()
+        
+        
+        print("DEBUG PRINT:", SDImageCache.shared.diskCache.totalSize())
+        SDImageCache.shared.config.maxDiskSize = 1000000 * 20
         return true
     }
 }
