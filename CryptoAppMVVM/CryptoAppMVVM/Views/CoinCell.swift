@@ -48,7 +48,17 @@ class CoinCell: UITableViewCell {
         
         self.coinName.text = coin.name
         
-        loadImage(from: coin.logoURL)
+        DispatchQueue.global().async { [weak self] in
+            if let logoURL = coin.logoURL,
+               let imageData = try? Data(contentsOf: logoURL),
+               let logoImage = UIImage(data: imageData) {
+                
+                DispatchQueue.main.async {
+                    self?.coinLogo.image = logoImage
+                }
+            }
+            
+        }
     }
     
     private func loadImage(from url: URL?) {
@@ -69,6 +79,13 @@ class CoinCell: UITableViewCell {
     }
     
     // TODO: - PrepareForReuse
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.coinName.text = nil
+        self.coinLogo.image = nil
+    }
+    
+    
     
     // MARK: - UI Setup
     private func setupUI() {
